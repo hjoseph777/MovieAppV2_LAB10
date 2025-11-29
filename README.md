@@ -1,6 +1,6 @@
 ## MovieApp V2 LAB10 – Django CRUD Movie Management System
 
-## Project Detailsta
+## Project Details
 - Course: Cross Platform Web Development
 - Author: Harry Josephvelopment
 - Created: 2025-11-28
@@ -132,60 +132,5 @@ The database includes 10 pre-populated movies:
 - The Lord of the Rings: The Fellowship of the Ring (Adventure)
 - Star Wars: Episode IV - A New Hope (Sci-Fi)
 
-## Quick Start
 
-### Local Development
-```bash
-# Clone the repository
-git clone https://github.com/hjoseph777/MovieApp_LAB10.git
-cd MovieApp_LAB10
-
-# Navigate to Django project directory
-cd MovieApp_LAB10
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run migrations
-python manage.py migrate
-
-# Load sample data
-python manage.py populate_movies
-
-# Create superuser (optional)
-python manage.py createsuperuser
-
-# Start development server
-python manage.py runserver
-```
-
-### Deployment to Render
-```bash
-# After pushing to GitHub, configure Render:
-# 1. Set Root Directory to: MovieApp_LAB10
-# 2. Build Command: ./build.sh
-# 3. Start Command: gunicorn movieapp_lab10.wsgi:application
-
-# Validate deployment readiness (run from MovieApp_LAB10/ directory)
-python validate_deployment.py
-
-# Follow the deployment guide
-# See DEPLOYMENT_GUIDE.md for detailed instructions
-```
-
-## Educational Objectives
-This project demonstrates:
-- Django MVC architecture
-- Complete CRUD operations
-- User authentication and authorization
-- Form handling and validation
-- Database modeling and relationships
-- Template inheritance and static files
-- URL routing and view functions
-- Admin interface customization
-- Production deployment practices
-- Security best practices
-
----
-
-*This project demonstrates modern Django development practices with educational focus and production-ready deployment configuration.*
+*This project demonstrates modern Django development practices.
