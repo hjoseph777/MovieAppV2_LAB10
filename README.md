@@ -81,19 +81,6 @@ An interactive, collapsible view of the codebase. Click file names to explore th
          - 📄 [`base_site.html`](templates/admin/base_site.html) – Custom admin template
 </details>
 
-<details>
-   <summary><strong>Deployment & Configuration</strong></summary>
-
-   - 🛠️ [`build.sh`](build.sh) – Render deployment script
-   - ⚙️ [`runtime.txt`](runtime.txt) – Python version specification
-   - 📄 [`render.env.example`](render.env.example) – Environment variables template
-   - 📋 [`RENDER_DEPLOYMENT.md`](RENDER_DEPLOYMENT.md) – Deployment guide
-   - 🧪 [`validate_deployment.py`](validate_deployment.py) – Deployment validation script
-   - 📦 [`requirements.txt`](requirements.txt) – Python dependencies
-   - 🔒 [`.gitignore`](.gitignore) – Git ignore patterns
-   - 📄 [`manage.py`](manage.py) – Django management script
-</details>
-
 ## Features Implemented
 ### Core CRUD Operations
 - **Create**: Add new movies with name, genre, description
