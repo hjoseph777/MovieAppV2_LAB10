@@ -23,7 +23,6 @@ MovieApp LAB10 demonstrates complete CRUD operations in Django with user authent
 ## admin
 - user: admin
 - password: admin
-*Complete Django project with CRUD operations ready to deploy*
 
 ## Important: Where your Django code lives
 - The main CRUD operations are in [`movie/views.py`](movie/views.py) with authentication-protected views
