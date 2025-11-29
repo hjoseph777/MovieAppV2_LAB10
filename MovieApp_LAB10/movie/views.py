@@ -12,19 +12,16 @@ def home(request):
     # Just the landing page - nothing fancy here
     return render(request, 'movie/home.html')
 
-@login_required
 def movie_list(request):
     # TODO: might want to add pagination later if we get too many movies
     movies = Movie.objects.all()
     return render(request, 'movie/movie_list.html', {'movies': movies})
 
-@login_required
 def movie_detail(request, id):
     # Get the movie or show 404 if it dosn't exist
     movie = get_object_or_404(Movie, pk=id)
     return render(request, 'movie/movie_detail.html', {'movie': movie})
 
-@login_required
 def movie_search(request):
     query = request.GET.get('q')
     movies = []  # start with empty list
