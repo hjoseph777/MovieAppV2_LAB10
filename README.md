@@ -20,7 +20,9 @@ MovieApp LAB10 demonstrates complete CRUD operations in Django with user authent
 
 ## Live Demo
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://movieappv2-lab10.onrender.com/)
-
+## admin
+- user: admin
+- password: admin
 *Complete Django project with CRUD operations ready to deploy*
 
 ## Important: Where your Django code lives
