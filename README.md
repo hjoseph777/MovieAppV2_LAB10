@@ -19,7 +19,7 @@ MovieApp LAB10 demonstrates complete CRUD operations in Django with user authent
 [![Download MovieApp LAB10](https://img.shields.io/badge/Download-MovieApp_LAB10.zip-blue?style=for-the-badge&logo=download)](https://github.com/hjoseph777/MovieApp_LAB10/releases/download/v1/MovieApp_LAB10.zip)
 
 ## Live Demo
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://your-movieapp-lab10.onrender.com)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://movieappv2-lab10.onrender.com/)
 
 *Complete Django project with CRUD operations ready to deploy*
 
