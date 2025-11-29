@@ -1,0 +1,45 @@
+{% extends 'movie/base.html' %}
+
+{% block title %}{{ title }} - CineVault{% endblock %}
+
+{% block content %}
+<div class="form-container modal-style">
+    <div class="modal-header">
+        <h2>{{ title }}</h2>
+        <a href="{% if movie %}{% url 'movie_detail' movie.id %}{% else %}{% url 'movie_list' %}{% endif %}" class="close-btn" title="Close">&times;</a>
+    </div>
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="{{ form.name.id_for_label }}">Movie Name:</label>
+            {{ form.name }}
+            {% if form.name.errors %}
+                <div class="error-message">{{ form.name.errors }}</div>
+            {% endif %}
+        </div>
+        
+        <div class="form-group">
+            <label for="{{ form.genre.id_for_label }}">Genre:</label>
+            {{ form.genre }}
+            {% if form.genre.errors %}
+                <div class="error-message">{{ form.genre.errors }}</div>
+            {% endif %}
+        </div>
+        
+        <div class="form-group">
+            <label for="{{ form.description.id_for_label }}">Description:</label>
+            {{ form.description }}
+            {% if form.description.errors %}
+                <div class="error-message">{{ form.description.errors }}</div>
+            {% endif %}
+        </div>
+        
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">
+                {% if movie %}Update Movie{% else %}Add Movie{% endif %}
+            </button>
+            <a href="{% if movie %}{% url 'movie_detail' movie.id %}{% else %}{% url 'movie_list' %}{% endif %}" class="btn btn-secondary">Cancel</a>
+        </div>
+    </form>
+</div>
+{% endblock %}

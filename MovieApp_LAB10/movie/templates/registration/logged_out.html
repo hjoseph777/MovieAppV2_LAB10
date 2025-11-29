@@ -1,0 +1,22 @@
+{% extends 'movie/base.html' %}
+
+{% block title %}Logged Out - CineVault{% endblock %}
+
+{% block content %}
+<div class="form-container modal-style">
+    <div class="modal-header">
+        <h2>Successfully Logged Out</h2>
+        <a href="{% url 'home' %}" class="close-btn" title="Close">&times;</a>
+    </div>
+    <div class="logout-message">
+        <p>You have been successfully logged out of CineVault.</p>
+        <p>Thank you for using our movie collection system!</p>
+        
+        <div class="navigation-options">
+            <a href="{% url 'home' %}" class="btn btn-primary">Go to Home</a>
+            <a href="{% url 'movie_list' %}" class="btn btn-secondary">Browse Movies</a>
+            <a href="{% url 'login' %}" class="btn btn-secondary">Login Again</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

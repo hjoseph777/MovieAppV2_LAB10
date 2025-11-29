@@ -1,0 +1,32 @@
+{% extends 'movie/base.html' %}
+
+{% block title %}Delete Movie - CineVault{% endblock %}
+
+{% block content %}
+<div class="form-container modal-style">
+    <div class="modal-header">
+        <h2>Delete Movie</h2>
+        <a href="{% url 'movie_detail' movie.id %}" class="close-btn" title="Close">&times;</a>
+    </div>
+    <div class="delete-confirmation">
+        <p>Are you sure you want to delete the movie "<strong>{{ movie.name }}</strong>"?</p>
+        <p class="warning">This action cannot be undone.</p>
+        
+        <div class="movie-info">
+            <h3>{{ movie.name }}</h3>
+            <p><strong>Genre:</strong> {{ movie.genre }}</p>
+            {% if movie.description %}
+                <p><strong>Description:</strong> {{ movie.description|truncatewords:20 }}</p>
+            {% endif %}
+        </div>
+        
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-actions">
+                <button type="submit" class="btn btn-danger">Yes, Delete</button>
+                <a href="{% url 'movie_detail' movie.id %}" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

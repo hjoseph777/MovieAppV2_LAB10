@@ -1,0 +1,59 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">{{ site_header|default:_('CineVault Administration') }}</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+{% block extrahead %}
+<style>
+/* Custom admin styles */
+.return-to-main {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #417690, #2d5068);
+    color: white !important;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(65, 118, 144, 0.3);
+    border: none;
+    cursor: pointer;
+}
+
+.return-to-main:hover {
+    background: linear-gradient(135deg, #2d5068, #1e3445);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(65, 118, 144, 0.4);
+    color: white !important;
+    text-decoration: none;
+}
+
+.return-to-main:before {
+    content: "← ";
+    margin-right: 5px;
+}
+
+.admin-footer-nav {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #f8f9fa;
+    border-top: 2px solid #e1e5e9;
+    margin-top: 40px;
+}
+</style>
+{% endblock %}
+
+{% block footer %}
+<div class="admin-footer-nav">
+    <a href="{% url 'home' %}" class="return-to-main">Return to CineVault Main Site</a>
+    <p style="margin-top: 15px; color: #666; font-size: 12px;">
+        Use the navigation above or this button to return to the main site
+    </p>
+</div>
+{% endblock %}
