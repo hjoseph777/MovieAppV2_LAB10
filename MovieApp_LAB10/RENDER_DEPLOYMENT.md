@@ -82,7 +82,7 @@ The `build.sh` script automatically:
 1. ✅ Installs Python dependencies
 2. ✅ Collects static files for CSS/JS
 3. ✅ Runs database migrations
-4. ✅ Creates admin user (`admin` / `adminpass123`)
+4. ✅ Creates admin user (`admin` / `admin`)
 5. ✅ Populates 10 sample movies
 6. ✅ Validates deployment readiness
 
@@ -93,8 +93,8 @@ The `build.sh` script automatically:
 After deployment, you can log in with:
 
 ```
-Username: admin@example.com
-Password: adminpass123
+Username: admin
+Password: admin
 ```
 
 **🔒 Security Note**: Change these credentials in production!

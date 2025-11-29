@@ -34,8 +34,8 @@ DATABASE_URL=postgresql://user:password@host:port/database
 
 ## Default Credentials (Change in Production)
 ```
-Admin Username: admin@example.com
-Admin Password: adminpass123
+Admin Username: admin
+Admin Password: admin
 ```
 
 ## Live URLs After Deployment
